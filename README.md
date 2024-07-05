@@ -2,7 +2,8 @@
 
  Responsive design mimicking the original Amazon interface build using **HTML** and **CSS** 
 
- <img>
+ <br>
+ <img src = /image.png>
 
 ## Features
 
