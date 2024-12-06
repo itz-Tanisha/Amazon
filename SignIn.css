@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Default CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+
+a{
+    font-size: 12px;
+    color: #0066C0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #c45500;
+}
+
+body{
+    background-color: white;
+    font-family: Outfit;
+    line-height: 19px;
+    padding: 20px 14px;
+    color: #111;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 35px;
+    width: auto;
+}
+
+.logo + span{
+    color: #111;
+    font-size: 13px;
+    position: relative;
+    bottom: 15px;
+    left: 2px;
+}
+
+.none:hover{
+    text-decoration: none;
+    color: #111;
+}
+
+.signin-container{
+    margin-top: 10px;
+    padding: 20px 26px;
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+    /* change these */
+    width: 350px;
+    height: 350px;
+}
+
+.signin-title{
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 18px;
+    margin-top: 5px;
+}
+
+.signin-form input{
+    width: 100%;
+    padding: 3px 7px;
+    font-size: 13px;
+    height: 31px;
+    outline: none;
+    border: 1px solid rgba(166, 166, 166);
+    border-radius: 3px;
+}
+
+.signin-form input:focus{
+    outline: 3px solid #c2f2ff;
+}
+
+.signin-form button{
+    text-align: center;
+    width: 100%;
+    background-color: #FFD814;
+    border: 1px solid #f7ca00;
+    border:none;
+    border-radius: 8px;
+    padding: 7px;
+    margin: 14px 0px 18px;
+    cursor: pointer;
+} 
+
+.signin-form button:hover{
+    background-color: #f7ca00;
+}
+
+.terms{ 
+    font-size: 12px;
+}
+
+/*.terms a{
+    color: #0066C0;
+    text-decoration: underline;
+}
+
+.terms a:hover{
+    color: #c45500;
+} */
+
+.signin-help{
+    font-size: 13px;
+    margin: 20px 0px;
+}
+
+.signin-help a{
+    font-size: 13px;
+}
+
+.signin-container hr{
+    border: 1px solid #e7e7e7;
+    margin: 0px 0px 14px;
+}
+
+/* .signin-container > a{
+    color: #0066C0;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.signin-container > a:hover{
+    color: #c45500;
+    text-decoration: underline;
+} */
+
+.create-account{
+    width: 350px;
+    font-size: 13px;
+    color: #373737;
+    margin: 20px auto 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-account p{
+    padding: 0px 8px;
+    color: #767676;
+}
+
+.create-account hr{
+    border: 1px solid #e7e7e7;
+    width: 110px;
+}
+
+.signup-button{
+    width: 350px;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 8px;
+    border: 1px solid #c3c3c3;
+    background-color: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.signup-button:hover{
+    background-color: #f1f1f1;
+}
+
+.footer{
+    margin-top: 20px 0;
+    padding:20px 0;
+    position: fixed;
+    bottom: 0;
+    background-color: linear-gradient(to bottom, #f4f4f4, #fff);
+    border-top: 2px solid #ededed;
+    font-size: 12px;
+    height: 130px;
+}
+
+.footer a{
+    margin-right: 25px;
+}
+
+.footer p{
+    font-size: 11px;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 400px){
+    .signin-container{
+        max-width: 350px;
+        width: auto;
+    }
+
+    .create-account hr{
+        width: 90px;
+    }
+
+    .signup-button{
+        width: 300px;
+    }
+}

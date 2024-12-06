@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Default CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+
+a{
+    font-size: 12px;
+    color: #0066C0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #c45500;
+}
+
+body{
+    background-color: white;
+    font-family: Outfit;
+    line-height: 19px;
+    padding: 20px 14px;
+    color: #111;
+}
+
+/* Container */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Logo */
+.logo{
+    height: 35px;
+    width: auto;
+}
+
+.logo + span{
+    color: #111;
+    font-size: 13px;
+    position: relative;
+    bottom: 15px;
+    left: 2px;
+}
+
+.none:hover{
+    text-decoration: none;
+    color: #111;
+}
+
+/* SignUp container */
+.signup-container{
+    margin-top: 10px;
+    padding: 20px 26px;
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+    /* change these */
+    width: 350px;
+    height: auto;
+}
+
+.signup-title{
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 18px;
+    margin-top: 5px;
+}
+
+.signup-form input{
+    width: 100%;
+    padding: 3px 7px;
+    font-size: 13px;
+    height: 31px;
+    outline: none;
+    border: 1px solid rgba(166, 166, 166);
+    border-radius: 3px;
+    margin: 5px 0px 15px;
+}
+
+.signup-form input:focus{
+    outline: 3px solid #c2f2ff;
+}
+
+.phone{
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 15px;
+}
+
+.phone div{
+    padding: 3px 7px;
+    font-size: 12px;
+    width: 60px;
+    height: 31px;
+    outline: none;
+    border: 1px solid rgba(166, 166, 166);
+    border-radius: 3px;
+}
+
+.phone input{
+    margin: 0;
+}
+
+.signup-form p{
+    font-size: 13px;
+    color: #111;
+}
+
+
+.signup-form button{
+    text-align: center;
+    width: 100%;
+    background-color: #FFD814;
+    border: 1px solid #f7ca00;
+    border:none;
+    border-radius: 8px;
+    padding: 7px;
+    margin: 22px 0px 18px;
+    cursor: pointer;
+} 
+
+.signup-form button:hover{
+    background-color: #f7ca00;
+}
+
+.signup-container hr{
+    border: 1px solid #e7e7e7;
+    margin:14px 0px;
+}
+
+.amazon-bus h5, .amazon-bus a{
+    font-size: 13px;
+}
+
+.account {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.terms{ 
+    font-size: 12px;
+}
+
+.footer{
+    margin-top: 50px;
+    padding:20px 0;
+    background-color: linear-gradient(to bottom, #f4f4f4, #fff);
+    border-top: 2px solid #ededed;
+    font-size: 12px;
+    height: 130px;
+}
+
+.footer a{
+    margin-right: 25px;
+}
+
+.footer p{
+    font-size: 11px;
+    color: #555;
+    margin-top: 15px;
+}
+
+
+/* Responsiveness */
+
+@media (max-width: 400px){
+    .signin-container{
+        max-width: 350px;
+        width: auto;
+    }
+
+    .signup-button{
+        width: 300px;
+    }
+}
