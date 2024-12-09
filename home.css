@@ -136,9 +136,9 @@ nav a img{
 }
 
 /* 5: ACCOUNTS */
-nav .account{
+/* nav .account{
     display: block;
-}
+} */
 
 nav .account h3 img{
     height: 10px;
@@ -683,17 +683,106 @@ nav > .search:hover{
 
 
 
+/* media query */
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (max-width: 992px) {
+
+    nav{
+        flex-wrap: wrap;
+    }
+
+    .search{
+        order: 7;
+        margin: 15px 0 5px;
+        min-width: 300px;
+    }
+
+    .nav-bottom{
+    
+        overflow-x: scroll;
+    
+    }
+
+    .nav-bottom::-webkit-scrollbar{
+        display: none;
+    }
 
 
+}
 
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    .orders,.nav-lang,.deliver,.account{
+        display: none;
+    }
+
+    #top{
+        gap: 0;
+        justify-content: center;
+    }
+
+    .mobile-user-icon{
+        display: flex !important;
+        flex:1;
+        justify-content: flex-end;
+    }
+
+    .mobile-user-icon img{
+        width: 30px;
+    }
+
+    .cart h3{
+
+      display: none;
+
+    }
 
 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .header-box {
+        margin-top: -5vw;
+    }
+    .nav-bottom div {
+        padding: 10px 5px;
+    }
+
+    .live-container{
+        height: 80vw;
+        
+    }
+
+    .live-products{
+        display: none;
+    }
+    .live-video-container video{
+        height: 40vw;
+        width: 80vw;
+    
+    }
 
 
+    .footer_row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+        gap: 20px;
+    }
 
+    .footer-logo{
+        gap: 15px;
+        flex-direction: column;
+    }
 
-
+    
+   
+}
 
 
 
@@ -821,3 +910,7 @@ nav > .search:hover{
     max-height: 100px;
     display: none;
 } */
+
+
+
+
