@@ -270,6 +270,7 @@ nav > .search:hover{
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .box-col{
@@ -563,9 +564,7 @@ nav > .search:hover{
 }
 
 .live-content{
-    margin-top: 6px;
-    display: flex;
-    gap: 10px;
+    margin-top: 10px;
 }
 
 .live-video-container{
@@ -596,7 +595,7 @@ nav > .search:hover{
 
 .live-products{
     padding: 0 5px 10px;
-    /* width: 700px; */
+    width: 100%;
     overflow-x: scroll;
     margin-bottom: 10px;
     display: flex;
